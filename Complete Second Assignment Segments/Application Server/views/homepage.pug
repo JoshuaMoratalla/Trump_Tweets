@@ -1,0 +1,49 @@
+html
+	head
+		style
+			include style.css
+		title= Pagetitle
+		
+	body
+		
+		h1= Pagetitle
+		p The queries are done by hashtags so the Russians can't trace your searches 
+		p Use one word only eg 'Crooked Hillary' would be '#Crooked Hillary'
+		div#inputbox
+			input#userinput(type='text' value="" name='input' placeholder='Type in to search tweet')
+			button#userinput(type='submit' value='Search tweet' onclick="Redirect()") Search Tweet
+		
+		
+			
+		h1= HateLevel
+		
+		div#trumpbox
+			img#trumpimg(src="https://thepioneeronline.com/wp-content/uploads/2017/06/Trump-Twitter-WEB.png")
+			
+		p#response= Response
+		
+		div#Twitterbox
+			h1 Most recent Hate/Fantastic tweets about me
+			table
+				for tweets in TrumpTweets
+					tr
+						td= tweets.Text
+						td= tweets.Time
+		
+
+		
+script.
+	function Redirect(){
+		var input = "";
+		var page = "";
+		input = document.getElementById("userinput").value;
+		if(input === ""){
+			alert("Please enter a tweet to search a query.");	
+		}else{
+			var path = "http://13.210.163.174:3000/search/";
+			var finalURL= path + input;
+			window.location.href=finalURL;
+		}
+	}
+	
+	
