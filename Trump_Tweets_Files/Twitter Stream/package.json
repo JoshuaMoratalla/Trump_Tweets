@@ -1,0 +1,17 @@
+{
+  "name": "ubuntu",
+  "version": "1.0.0",
+  "description": "Twitter Stream",
+  "main": "TwitterStream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Moratalla",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^0.15.3",
+    "mysql": "^2.15.0",
+    "node-twitter": "^0.5.3",
+    "sentiment": "^4.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+block content
+	
+html  
+	head
+		style
+			include style.css
+		title= title
+	body
+		h1= title
+		p You've gone the wrong way.
+		button#redirectbtn(type='submit' onclick="Redirect()") Return to homepage
+			
+script.
+	function Redirect(){
+		var path = "http://13.210.163.174:3000/";
+		window.location.href=path;
+		
+	}		
+
