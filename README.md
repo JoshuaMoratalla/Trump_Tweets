@@ -7,3 +7,5 @@ days after its creation in order to accumulate a number of tweets.
 
 Trump Tweets setup a website that just showed the average sentiment score, the most recent tweets and a phrase he
 might say according to the sentiment score (how the population feel about him).
+
+The current existence of Trump Tweets is off since continuation of use requires upkeep with fees.
